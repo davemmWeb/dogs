@@ -1,0 +1,84 @@
+.container{
+    background-image: url("../../accets/fondo-inicio.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.containerDetail{
+    width: 70%;
+    height: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(180, 200, 180, 0.5);
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;   
+}
+.imageTitle{
+    width: 40%;     
+}
+.imageTitle h1{
+    color: black;    
+}
+.imageTitle img{
+    width: 80%;
+    height: 18em;
+    border: solid 1px black;
+    border-radius: 20px 20px; 
+    box-shadow:  4px 4px 4px 2px rgb(15, 15, 15);
+}
+.details{
+   width: 45%; 
+   background-color: rgba(200, 200, 200, 0.7);    
+   border: solid 1px black;
+   border-radius: 20px 20px; 
+   box-shadow: 4px 4px 4px 2px rgb(15, 15, 15);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.details button{
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.details button:hover{
+    background-color: black;
+    color: antiquewhite;
+    border-color: antiquewhite;
+}
+
+/* ***********************BACK************************** */
+.back{
+    position: absolute;
+    border-radius: 50%;
+    height: 4em;
+    width: 5%;
+    left: 93%;
+    top: 4%;    
+    box-shadow: 1px 1px 1px 1px black;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+.back p{
+    font-size: 26px;
+    cursor: pointer; 
+    margin-top: 0.8rem;
+}
+@keyframes slidein{
+    from {
+        background-color: rgba(120, 156, 156, 0.5);
+    }
+    to{
+        background-color: rgba(244, 248, 248, 0.73);
+        transform: scale(1.1)
+    }
+}

@@ -1,0 +1,55 @@
+.container{
+    background-image: url("../../accets/fondo-inicio.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.containerCards{
+    display: flex;
+    flex-wrap: wrap;   
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.imgLoading{
+    position: absolute;
+    width: 13%;
+    top: 15em;
+    left: 37em;
+}
+/* ****************************************** */
+.exit{
+    position: absolute;
+    width: 5%;
+    right: 92%;
+    top: 3%;  
+    border-radius: 4px;
+    height: 2em;  
+    box-shadow: 1px 1px 1px 1px black;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    background-color: rgb(113, 169, 181);
+}
+.exit p{
+    color: white;
+    margin-top: -1rem;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 0.5rem;   
+}
+@keyframes slidein{
+    from {
+        border: solid 2px rgba(22, 22, 231, 0.5);
+    }
+    to{
+        border: solid 2px rgba(242, 18, 18, 0.998);
+    }
+}
